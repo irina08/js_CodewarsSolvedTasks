@@ -14,5 +14,5 @@ Examples
 const bracesStatus = s => {
     s = s.replace(/[^\(\)\[\]\{\}]/g, "");
     while (/\(\)|\[\]|\{\}/.test(s)) s = s.replace(/\(\)|\[\]|\{\}/g, "");
-    return s.length === 0;;
+    return s.length === 0;
 };
