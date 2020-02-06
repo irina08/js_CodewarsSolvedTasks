@@ -28,3 +28,25 @@ function validBraces(braces){
     }
     return array.length === 0;
 }
+
+/*
+function validBraces(braces){
+  let matches = { '(':')', '{':'}', '[':']' };
+  let stack = [];
+  let current;
+
+  for (let i = 0; i < braces.length; i++) {
+    current = braces[i];
+
+    if (matches[current]) { // opening braces
+      stack.push(current);
+      console.log(stack);
+    } else { // closing braces
+      if (current !== matches[stack.pop()]) {
+        return false;
+      }
+    }
+  }
+  return stack.length === 0; // any unclosed braces left?
+}
+ */
