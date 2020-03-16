@@ -23,3 +23,15 @@ titleCase('a clash of KINGS', 'a an the of') // should return: 'A Clash of Kings
 titleCase('THE WIND IN THE WILLOWS', 'The In') // should return: 'The Wind in the Willows'
 titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
  */
+
+function titleCase(title, minorWords = '') {
+  const minorWordsArray = minorWords.toLowerCase().split(' ');
+  const result = title.split(' ').map((el, i) => {
+    if (i === 0)
+      return el.substr(0, 1).toUpperCase() + el.substr(1).toLowerCase();
+    else
+      return minorWordsArray.includes(el.toLowerCase()) ? el.toLowerCase() :
+        el.substr(0, 1).toUpperCase() + el.substr(1).toLowerCase();
+  }).join(' ');
+  return result;
+}
