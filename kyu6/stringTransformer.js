@@ -11,11 +11,11 @@ For example:
 You may assume the input only contain English alphabet and spaces.
  */
 
-return str.split(' ')
+function stringTransformer(str) {
+  return str.split(' ')
   .reverse()
   .join(' ')
   .split('')
   .map(el => el === el.toLowerCase() ? el.toUpperCase() : el.toLowerCase())
   .join('');
-
 }
