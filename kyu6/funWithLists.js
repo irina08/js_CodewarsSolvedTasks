@@ -12,3 +12,14 @@ function Node(data, next = null) {
 Note: the list may be null and can hold any type of value.
  */
 
+function map(head, f) {
+  let newHead = new Node(-1);
+  let temp = newHead;
+  while (head)
+  {
+    newHead.next = new Node(f(head.data));
+    newHead = newHead.next;
+    head = head.next;
+  }
+  return temp.next;
+}
