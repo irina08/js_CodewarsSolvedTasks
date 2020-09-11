@@ -28,3 +28,22 @@ function replaceCommon(string, letter) {
   return result.join('');
 }
 
+//second solution
+
+/*
+function replaceCommon(string, letter) {
+  let a = string.toLowerCase();
+  let obj = {};
+  for(let i = 0; i < a.length; i++){
+  if(!obj[a[i]]) obj[a[i]] = 1;
+  else obj[a[i]] += 1;
+  }
+
+  delete obj[' '];
+
+  let b = Object.keys(obj).find(key => obj[key] === Math.max(...Object.values(obj)));
+
+  return a.replace(new RegExp(b, "g" ), letter);
+
+}
+ */
