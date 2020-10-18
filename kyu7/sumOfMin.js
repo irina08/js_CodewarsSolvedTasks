@@ -16,3 +16,10 @@ function sumOfMinimums(arr) {
   }
   return sum;
 }
+
+/* Second solution
+function sumOfMinimums(arr) {
+  return arr.reduce((el, sum) => p + Math.min(...el), 0);
+}
+ */
+
