@@ -30,3 +30,20 @@ function solve(arr){
   return result;
 };
 
+//second solution
+/*
+function solve(arr){
+  let result = [];
+  arr.sort((a,b) => a - b);
+  for(let i = 0, j = arr.length - 1; i <= j; i++, j--){
+    if(i !== j) {
+      result.push(arr[j]);
+      result.push(arr[i]);
+     }
+     else
+      result.push(arr[i]);
+  }
+  return result;
+}
+ */
+
