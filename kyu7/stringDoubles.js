@@ -29,3 +29,15 @@ function doubles(s){
   return s;
 }
 
+/*
+function doubles(s){
+  let arr = [];
+  for (let el of s) {
+    if (arr.length !== 0 && arr[arr.length - 1] === el)
+      arr.pop();
+    else
+      arr.push(el);
+  }
+  return arr.join('');
+}
+ */
