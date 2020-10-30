@@ -31,3 +31,23 @@ function pattern(n){
   return output;
 }
 
+/*
+function pattern(numberOfLines) {
+  let output = '1'
+  let lineNumber;
+
+  for (lineNumber = 2; lineNumber <= numberOfLines; lineNumber++) {
+    output += '\n' + '1' + getStars(lineNumber - 1) + lineNumber.toString();
+  }
+  return output
+}
+
+function getStars(numberOfStars) {
+  let output = '';
+
+  while (output.length < numberOfStars) {
+    output += '*'
+  }
+  return output
+}
+ */
