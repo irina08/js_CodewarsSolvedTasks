@@ -10,3 +10,25 @@ var removeVowels = function(str){
   return str.replace(/[aeiou]/gi, '');
 }
 
+/*
+var removeVowels = function(str){
+  const arr = str.split('')
+
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === 'a'){
+      arr[i] = ''
+    }else if (arr[i] === 'e'){
+      arr[i] = ''
+    }else if (arr[i] === 'i'){
+      arr[i] = ''
+    }else if (arr[i] === 'o'){
+      arr[i] = ''
+    }else if (arr[i] === 'u'){
+      arr[i] = ''
+    }
+  }
+
+  const newString = arr.join('')
+  return newString;
+}
+ */
