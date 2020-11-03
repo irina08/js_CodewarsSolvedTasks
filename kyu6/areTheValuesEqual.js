@@ -25,3 +25,19 @@ function areEqual(value1, value2) {
   return keys.every(key => areEqual(value1[key], value2[key]));
 }
 
+/*
+function areEqual(value1, value2) {
+  const keys1 = Object.keys(value1);
+  const keys2 = Object.keys(value2);
+
+  if (keys1.length !== keys2.length)
+    return false;
+  return keys1.every((key) => {
+    if (typeof value1[key] === "object" && typeof value1[key] === "object") {
+      return areEqual(value1[key], value2[key])
+    }
+    return value1[key] === value2[key];
+  });
+}
+ */
+
