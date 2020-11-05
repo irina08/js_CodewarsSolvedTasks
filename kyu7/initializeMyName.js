@@ -17,3 +17,8 @@ function initializeNames(name){
   return name.join(' ')
 }
 
+/*
+function initializeNames(name){
+  return name.split(' ').map((e,i,a) => i == 0 || i == a.length-1 ? e : e[0]+'.').join(' ');
+}
+ */
