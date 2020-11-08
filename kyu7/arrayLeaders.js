@@ -47,3 +47,20 @@ let arrayLeaders = numbers => {
   return result;
 }
 
+/*
+var arrayLeaders = numbers => {
+  let answer = [];
+
+  for (let i=0; i<numbers.length; i++){
+    let sum = 0;
+    for (let j=i+1; j<numbers.length; j++){
+      sum += numbers[j];
+    }
+
+    if(numbers[i] > sum){
+      answer.push(numbers[i]);
+    }
+  }
+  return answer;
+}
+ */
