@@ -17,3 +17,18 @@ function solve(arr){
   return +arr.filter((el, i) => !arr.includes(-el) && i === arr.lastIndexOf(el)).join();
 };
 
+//second solution
+/*
+function solve(arr) {
+  return  arr.find(el => !arr.includes(-el));
+ */
+
+/*
+function solve(arr) {
+  const s = new Set(arr);
+  for (const x of s) {
+    if (!s.has(-x))
+      return x;
+  }
+};
+ */
