@@ -45,3 +45,9 @@ function automorphic(n){
     return 'Not!!';
 }
 
+/*
+function automorphic(n){
+  var re = new RegExp(n+'$');
+  return re.test(String(n*n))? "Automorphic": "Not!!";
+}
+ */
