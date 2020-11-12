@@ -21,3 +21,8 @@ function vowelFilter (letters) {
 
 };
 
+// return letters.filter(item=> vowels.indexOf(item)<0)
+
+// const vowelFilter = a => a.filter(i => /[^aeuio]/.test(i))
+
+// return letters.filter( item  => item.match(/[^aeiou]/) );
