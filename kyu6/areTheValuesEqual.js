@@ -33,7 +33,7 @@ function areEqual(value1, value2) {
   if (keys1.length !== keys2.length)
     return false;
   return keys1.every((key) => {
-    if (typeof value1[key] === "object" && typeof value1[key] === "object") {
+    if (typeof value1[key] === "object" && typeof value2[key] === "object") {
       return areEqual(value1[key], value2[key])
     }
     return value1[key] === value2[key];
