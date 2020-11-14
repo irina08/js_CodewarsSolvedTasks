@@ -30,3 +30,7 @@ function completeSeries(arr) {
   return result;
 }
 
+//second solution
+/*
+return new Set(arr).size !== arr.length ? [0] : [...Array(Math.max(...arr) + 1).keys()];
+ */
