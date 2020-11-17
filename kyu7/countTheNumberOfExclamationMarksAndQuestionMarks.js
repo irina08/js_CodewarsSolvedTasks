@@ -17,3 +17,24 @@ function product(s){
   return (s.match(/\?/g) || []).length * (s.match(/!/g) || []).length;
 }
 
+/*
+function product(s){
+  let ques = 0;
+  let excl = 0;
+
+    s.split('').forEach(function(item){
+      if (item === "!"){
+        excl += 1;
+      }
+      if(item === "?"){
+        ques += 1;
+      }
+      if(item === ""){
+        return 0;
+      }
+    });
+
+  return excl * ques;
+}
+ */
+
