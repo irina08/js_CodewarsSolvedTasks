@@ -25,3 +25,19 @@ function duplicateSandwich(a) {
   }
 }
 
+/*
+const duplicateValue = array => array.find((value) => (
+  array.indexOf(value) !== array.lastIndexOf(value)
+))
+
+function duplicateSandwich (array) {
+  const duplicateWord = duplicateValue([...array])
+
+  const firstOccurrence = array.indexOf(duplicateWord)
+  const lastOccurrence = array.lastIndexOf(duplicateWord)
+
+  return array.slice(firstOccurrence + 1, lastOccurrence)
+}
+ */
+
+
