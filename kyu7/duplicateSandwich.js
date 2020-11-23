@@ -41,3 +41,20 @@ function duplicateSandwich (array) {
  */
 
 
+/*
+function duplicateSandwich(a) {
+  for (var i = 0; i < a.length; i++) {
+    var num1 = a[i];
+
+    for (var j = i + 1; j < a.length; j++) {
+      var num2 = a[j];
+
+      if (num2 === num1) {
+        return a.slice(i + 1, j);
+      }
+    }
+  }
+  return [];
+}
+ */
+
