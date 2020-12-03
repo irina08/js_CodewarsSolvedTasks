@@ -14,3 +14,16 @@ var filterLucky=x=>{
 }
 
 
+//second solution
+/*
+const filterLucky = (x) => {
+  return x.filter((el) => {
+    el = el + '';
+    for (let i = 0; i < el.length; i++) {
+      if (el[i] === '7') {
+        return el;
+      }
+    }
+  });
+}
+ */
