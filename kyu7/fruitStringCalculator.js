@@ -25,3 +25,12 @@ function calculate(string) {
     return +arrayResult[0] + +arrayResult[1];
 }
 
+/*
+function calculate(string) {
+  let arrayResult = string.match(/\d+/g);
+  if(string.includes('loses'))
+    return +arrayResult[0] - +arrayResult[1];
+  else
+    return +arrayResult[0] + +arrayResult[1];
+}
+ */
