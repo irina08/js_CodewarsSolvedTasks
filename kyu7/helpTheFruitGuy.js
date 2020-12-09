@@ -21,3 +21,9 @@ function removeRotten(bagOfFruits){
   return bagOfFruits;
 }
 
+/*
+function removeRotten(bagOfFruits){
+  if(!bagOfFruits || !bagOfFruits.length) {return [];}
+  else {return bagOfFruits.map(e => e.replace(/^rotten/g, '').toLowerCase())};
+}
+ */
