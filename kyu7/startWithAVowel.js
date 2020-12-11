@@ -18,3 +18,17 @@ function vowelStart(str){
     .toLowerCase();
 }
 
+/*
+function vowelStart(str){
+let s = str.replace(/['_']/g, '').toLowerCase();
+  s = s.replace(/[^a-z+0-9]/g, '');
+  let res = '';
+  let vowel = 'aoiue';
+  for(let i = 0; i < s.length; i++){
+    if(vowel.includes(s[i])){
+    res += ' '+ s[i];}
+    else {res += s[i];}
+  }
+return res.trimLeft();
+}
+ */
