@@ -19,3 +19,11 @@ function tripleX(str){
   else
     return false;
 }
+
+
+/*
+const tripleX = str => {
+    let x = str.indexOf('x')
+    return x > -1 && x === str.indexOf('xxx')
+}
+ */
