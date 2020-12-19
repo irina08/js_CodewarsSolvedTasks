@@ -16,3 +16,19 @@ function solution(nums){
   }
 }
 
+//second solution
+/* function solution(nums){
+  if(!nums)
+    nums = [];
+  for (let i = nums.length-1; i >= 0; i--) {
+    for (let j = i; j >= 0; j--) {
+      if (nums[i] < nums[j]) {
+        let temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+      };
+    };
+  };
+  return nums;
+}
+*/
